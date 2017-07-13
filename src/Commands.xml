@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="!timeout" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".timeout"></property>
+	</bean>
+	<bean id="!viewers" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".viewers"></property>
+	</bean>
+	<bean id="!clear" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".clear"></property>
+	</bean>
+	<bean id="!slow" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".slow"></property>
+	</bean>
+	<bean id="!slowoff" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".slowoff"></property>
+	</bean>
+	<bean id="!k" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".kick"></property>
+	</bean>
+	<bean id="!b" class="com.cartmanbot.utils.Commands">
+		<property name="command" value=".ban"></property>
+	</bean>
+	<bean id="!playlist" class="com.cartmanbot.utils.Commands">
+		<property name="command" value="SleepytimeKirby's playlist is "></property>
+	</bean>
+	<bean id="!weather" class="com.cartmanbot.utils.Commands">
+		<property name="command" value="The weather for "></property>
+	</bean>
+</beans>

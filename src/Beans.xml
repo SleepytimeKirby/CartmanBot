@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="ircC" class="com.cartmanbot.utils.IrcConnector">
+	<constructor-arg ref="slow"/>
+	<constructor-arg ref="caps"/>
+	<constructor-arg ref="copy"/>
+	<constructor-arg ref="data"/>
+	<constructor-arg ref="flood"/>
+	<constructor-arg ref="html"/>
+	<constructor-arg ref="repeat"/>
+	<constructor-arg type="java.lang.String" value="CartmanBot"/>
+	<constructor-arg ref="trivia"/>
+	<constructor-arg type="java.land.String" value="colmeecrob" />
+</bean>
+
+
+<bean id="slow" class="com.cartmanbot.logic.AutoSlowMode"></bean>
+<bean id="caps" class="com.cartmanbot.logic.CapsDetector"></bean>
+<bean id="copy" class="com.cartmanbot.logic.CopyPastaDetector"></bean>
+<bean id="data" class="com.cartmanbot.logic.DataRetrival"></bean>
+<bean id="flood" class="com.cartmanbot.logic.FloodDetector"></bean>
+<bean id="html" class="com.cartmanbot.logic.HtmlFilter"></bean>
+<bean id="repeat" class="com.cartmanbot.logic.RepeatDetector"></bean>
+ 
+
+</beans>

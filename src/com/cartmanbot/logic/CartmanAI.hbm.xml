@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.cartmanbot.logic.CartmanAI" table="cartman_ai">
+	<id name="copy_id" column="id">
+		<generator class="native"></generator>
+	</id>
+	<property name="text" column="quote" type="string" />
+	</class>
+</hibernate-mapping>
